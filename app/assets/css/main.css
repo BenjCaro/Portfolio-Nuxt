@@ -1,0 +1,5 @@
+@import "tailwindcss";
+
+@import "@nuxt/ui"; /* Important : Cela importe les styles spécifiques de Nuxt UI */
+
+/* @variant dark (&:where(.dark, .dark *)); */
