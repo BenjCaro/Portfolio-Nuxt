@@ -6,15 +6,12 @@
 
 <template>
   <div>
-    <UHeader title="Mon App">
+    <UHeader>
       <template #title>
-        <UIcon name="i-heroicons-rocket-launch" class="w-6 h-6" />
-        <span class="font-bold hidden sm:inline text-lg">PortFolio - Benjamin CARO</span>
+        <UIcon name="i-lucide-code-2" class="w-6 h-6 text-primary" />
       </template>
         <UNavigationMenu :items="mainNav"/>
-      <template #right>
-        <UColorModeButton />
-      </template>
+        <ColorModeButton/>
     </UHeader>
 
     <UMain>
@@ -25,7 +22,9 @@
 
     <UFooter>
       <template #left>
-        Copyright © 2026
+        <span class="text-sm">
+          Copyright © 2026
+        </span>
       </template>
       <template #right>
         <UButton
