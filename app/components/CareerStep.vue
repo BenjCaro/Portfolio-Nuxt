@@ -1,15 +1,15 @@
 <script setup lang="ts">
-interface PropsStep {
-  date: string
-  title: string
-  content?: string
-  active?: boolean
-}
+    interface PropsStep {
+      date: string
+      title: string
+      content?: string
+      active?: boolean
+    }
 
-// On définit les props avec 'active' à false par défaut
-const props = withDefaults(defineProps<PropsStep>(), {
-  active: false
-})
+    // On définit les props avec 'active' à false par défaut
+    const props = withDefaults(defineProps<PropsStep>(), {
+      active: false
+    });
 </script>
 
 <template>
