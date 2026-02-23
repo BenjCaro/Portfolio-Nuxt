@@ -5,6 +5,19 @@
 </script>
 <template>
   <UContainer class="py-12 md:py-20">
+    <div class="flex justify-center mb-12">
+      <UAvatar 
+        src="/photo-profil (2).webp"
+        alt="Benjamin Caro"
+        class="w-48 h-48 md:w-56 md:h-56 shadow-2xl"
+        :ui="{ 
+          root: 'rounded-full border-4 border-white dark:border-gray-900 ring-1 ring-neutral-200 dark:ring-neutral-800',
+          image: 'object-cover' 
+        }"
+      />
+    </div>
+    
+      
     <div class="grid md:grid-cols-2 gap-12">
       
       <div>

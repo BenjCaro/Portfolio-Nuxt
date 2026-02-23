@@ -25,7 +25,7 @@ export const useForm = () => {
         loading.value = true
         
         try {
-            // Appel à notre API Nuxt
+            
             await $fetch('/api/contact', {
                 method: 'POST',
                 body: event.data
@@ -38,7 +38,7 @@ export const useForm = () => {
                 duration: 4000
             })
 
-            // Reset du state
+            
             Object.assign(state, { name: '', email: '', message: '' })
             
         } catch (error) {
