@@ -3,7 +3,6 @@ import { z } from 'zod';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-// On définit le même schéma (tu pourrais même l'exporter depuis un fichier partagé)
 const contactSchema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
